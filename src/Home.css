@@ -1,0 +1,51 @@
+body {
+  background-color: #e1f1e0; /* Alice blue for a softer background */
+  color: #0e4614; /* Dark text for contrast */
+  font-family: 'Arial', sans-serif; /* Default font family */
+  margin: 0;
+  padding: 0;
+}
+
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #006400; /* Sea green for heading */
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  max-width: 80%;
+}
+
+.discription {
+  max-width: 80%; /* Limit width for better readability */
+  text-align: left;
+  padding: 15px;
+  line-height: 1.6;
+  font-weight: 400;
+  display: flex;
+  
+  flex-direction: column;
+  
+}
+
+.discription p {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .discription {
+    padding: 10px;
+  }
+}

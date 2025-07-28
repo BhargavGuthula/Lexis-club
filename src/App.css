@@ -1,0 +1,7 @@
+body {
+  background-color: #9fe09f; /* Very light green */
+  color: rgb(223, 246, 223);               /* Dark text for contrast */
+  font-family: Arial, sans-serif; /* Default font family */
+  margin: 0;                /* Remove default body margin */
+  padding: 0;               /* Remove default body padding */
+}

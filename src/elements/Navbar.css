@@ -1,0 +1,97 @@
+/* src/components/Navbar.css */
+
+.navbar {
+ background-color: rgba(226, 251, 210, 0.967);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;            /* NEW: allows wrap */
+  padding: 0.5rem 1rem;         /* Reduce side padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; 
+  backdrop-filter: blur(10px);
+  
+}
+
+.navbar-brand a {
+  color: rgb(8, 75, 0);
+  justify-content: start;
+  font-size: 1.25rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+#img1{
+  padding-right: 10px;
+}
+#LOGO{
+  padding-bottom: 100px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 1px;
+  padding-left: 40px;
+  font-size: 0.8rem;
+}
+
+.nav-item a {
+  color: rgb(8, 75, 0);;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: green;
+}
+
+/* Hide toggle button by default */
+.navbar-toggle {
+  display: none;  
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: green;
+  font-size: 1.5rem;
+  margin-left: aUto;
+  padding:0;
+  margin-top: 7px;
+  
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .navbar.active .navbar-nav {
+    display: flex;
+    border-color: red;
+  }
+
+  /* Display toggle button on small screens */
+  .navbar-toggle {
+    display: block;
+  }
+}
