@@ -6,7 +6,7 @@ const Home = () => {
     return (
         <>
             <div className="landingPage">
-                <h1>Welcome to THE LEXIS CLUB ! </h1>
+                <h1 id="h1Home">Welcome to THE LEXIS CLUB ! </h1>
                 <div className="discription">
                     <p>Lexis Club is where words meet power.</p>
                     <p>From debates and literature to hosting events that shake the campus, we’re the storytellers, speakers, and strategists who don’t just talk , we move.

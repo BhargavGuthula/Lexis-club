@@ -6,7 +6,7 @@ body {
   padding: 0;
 }
 
-.landingPage {
+.aboutPage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,18 +14,17 @@ body {
   min-height: 100vh; /* Full viewport height */
   text-align: center;
   padding: 20px;
-  padding-bottom: px;
 }
 
-#h1Home {
+#h1About {
   color: #006400; /* Sea green for heading */
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 20px;
   font-size: 3rem;
   max-width: 80%;
 }
 
-.discription {
+.aboutLexis {
   max-width: 80%; /* Limit width for better readability */
   text-align: left;
   padding: 15px;
@@ -46,7 +45,7 @@ body {
     font-size: 2rem; 
   }
   .landingPage{
-    margin-top: 50px;
+    margin-top: 70px;
   }
   .discription {
     padding: 10px;
