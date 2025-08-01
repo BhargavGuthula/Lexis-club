@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './elements/Navbar'
 import Home from './Home'
 import About from './About'
+import GoverningBody from './GoverningBody'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <GoverningBody/>
     </>
   )
 }

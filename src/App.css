@@ -1,7 +1,22 @@
 body {
   background-color: #9fe09f; /* Very light green */
-  color: rgb(223, 246, 223);               /* Dark text for contrast */
+  color: rgb(27, 84, 27);               /* Dark text for contrast */
   font-family: Arial, sans-serif; /* Default font family */
   margin: 0;                /* Remove default body margin */
-  padding: 0;               /* Remove default body padding */
+  padding: 0;  
+  overflow: hidden;  
+  scroll-behavior: smooth;           /* Remove default body padding */
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; 
+  }
+  .landingPage{
+    margin-top: 50px;
+  }
+  .discription {
+    padding: 10px;
+    max-width: 100%;
+  }
+
 }

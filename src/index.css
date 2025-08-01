@@ -3,15 +3,18 @@
   line-height: 2;
   font-weight: 800;
   font-size: larger;
-
+  background-color: #1a1a1a;
+  overflow: auto;
+  
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: hsl(132, 90%, 76%);
+  /*   */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+   -webkit-overflow-scrolling: touch;
 }
 
 a {

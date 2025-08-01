@@ -50,7 +50,8 @@
 }
 
 .nav-item a:hover {
-  color: green;
+  color: #FF69B4;
+  transition-delay: 0.01s;
 }
 
 /* Hide toggle button by default */

@@ -1,0 +1,63 @@
+.governing-body {
+  padding: 40px 20px;
+  background-color: #e1f1e0; /* same as your body background or slightly varied */
+}
+
+.governing-body h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #006400; /* Matches your #h1Home */
+  margin-bottom: 20px;
+}
+
+.team-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.team-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.member-card {
+  flex: 0 0 auto;
+  width: 140px;
+  background: #f9fff9; /* soft light green */
+  border: 2px solid #00640020; /* subtle green border */
+  border-radius: 10px;
+  text-align: center;
+  scroll-snap-align: start;
+  box-shadow: 0 6px 14px rgba(0, 100, 0, 0.1);
+  padding: 12px;
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 100, 0, 0.15);
+}
+
+.member-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border: 2px solid #00640050;
+}
+
+.member-card .role {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #006400;
+  margin-bottom: 4px;
+}
+
+.member-card .name {
+  font-size: 0.85rem;
+  color: #068c06c0;
+}

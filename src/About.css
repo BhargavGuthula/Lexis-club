@@ -13,15 +13,16 @@ body {
   justify-content: center;
   min-height: 100vh; /* Full viewport height */
   text-align: center;
-  padding: 20px;
+
+
 }
 
 #h1About {
   color: #006400; /* Sea green for heading */
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 3rem;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 .aboutLexis {
@@ -41,8 +42,9 @@ body {
 }
 
 @media (max-width: 768px) {
-  h1 {
+  #h1About {
     font-size: 2rem; 
+    
   }
   .landingPage{
     margin-top: 70px;
