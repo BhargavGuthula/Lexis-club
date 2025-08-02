@@ -6,6 +6,7 @@ const teamMembers = [
   { name: "Aarav Sharma", role: "Vice President", image: "vp.jpg" },
   { name: "Riya Patel", role: "Secretary", image: "sec.jpg" },
   { name: "John Doe", role: "Treasurer", image: "treasurer.jpg" },
+  { name: "John Doe", role: "Treasurer", image: "treasurer.jpg" },
   // Add more team members here
 ];
 

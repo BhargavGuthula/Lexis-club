@@ -1,38 +1,48 @@
 .governing-body {
   padding: 40px 20px;
-  background-color: #e1f1e0; /* same as your body background or slightly varied */
+  background-color: #e1f1e0;
+  /* same as your body background or slightly varied */
+  min-height: 90vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-width: 10px;
+
 }
 
 .governing-body h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #006400; /* Matches your #h1Home */
-  margin-bottom: 20px;
+  color: #006400;
+  /* Matches your #h1Home */
+  margin-bottom: 10px;
 }
 
 .team-slider {
   display: flex;
   overflow-x: auto;
-  gap: 16px;
-  padding: 10px 0;
+  gap: 20px;
+  padding: 10px 20px;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+
 }
 
 .team-slider::-webkit-scrollbar {
   display: none;
 }
 
-.member-card {
+.member-card {  
   flex: 0 0 auto;
-  width: 140px;
-  background: #f9fff9; /* soft light green */
-  border: 2px solid #00640020; /* subtle green border */
+  width: 150px;
+  height: auto;
+  background: #f9fff9;
+  border: 2px solid #00640020;
   border-radius: 10px;
   text-align: center;
   scroll-snap-align: start;
   box-shadow: 0 6px 14px rgba(0, 100, 0, 0.1);
-  padding: 12px;
+  padding: 100px;
   transition: transform 0.3s ease;
 }
 
@@ -57,7 +67,51 @@
   margin-bottom: 4px;
 }
 
+.team-slider .member-card:last-child {
+  margin-right: 20px;
+  /* Ensures there's space at the end of the slider */
+}
+.team-slider .member-card:first-child {
+  margin-left: 20px;
+  /* Ensures there's space at the end of the slider */
+}
+
 .member-card .name {
   font-size: 0.85rem;
-  color: #068c06c0;
+  color: #FF69B4;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  .governing-body {
+    padding: 20px 10px;
+  }
+
+  .governing-body h2 {
+    font-size: 1.8rem;
+  }
+
+  .team-slider {
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .member-card {
+    width: 120px;
+    padding: 10px;
+  }
+
+  .member-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 6px;
+  }
+
+  .member-card .role {
+    font-size: 0.9rem;
+  }
+
+  .member-card .name {
+    font-size: 0.8rem;
+  }
 }
