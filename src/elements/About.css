@@ -4,6 +4,8 @@ body {
   font-family: 'Arial', sans-serif; /* Default font family */
   margin: 0;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aboutPage {
@@ -14,6 +16,8 @@ body {
   min-height: 100vh; /* Full viewport height */
   text-align: center;
   max-width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -48,6 +52,7 @@ body {
   }
   .landingPage{
     margin-top: 70px;
+    max-width: fit-content;
     
   }
   .discription {

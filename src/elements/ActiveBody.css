@@ -1,0 +1,147 @@
+.active-body {
+  padding: 20px 20px;
+  background-color: #e1f1e0;
+  min-height: 50vh;
+  overflow-x: scroll;
+  max-width: 800px;
+  margin-left: 10px;
+  margin-right:  10px;
+  scrollbar-width: none;
+}
+
+.active-body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on Webkit browsers */
+}
+
+.active-body-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.slider-container2 {
+  width: 100%;
+  max-width: 700px;
+
+  border: 1.5px solid rgba(182, 226, 179, 0.8);
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(34, 139, 34, 0.08);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.team-slider2 {
+  display: flex;
+  overflow-x: scroll;
+  gap: 24px;
+  scroll-snap-type: x mandatory;
+  width: max-content;
+  scrollbar-width: none;
+}
+
+.team-slider2::-webkit-scrollbar {
+  display: none;
+}
+
+.member-card2 {  
+  flex: 0 0 auto;
+  width: 150px;
+  background: #f9fff9;
+  border: 2px solid #00640020;
+  border-radius: 10px;
+  text-align: center;
+  scroll-snap-align: inherit;
+  box-shadow: 0 6px 14px rgba(0, 100, 0, 0.1);
+  padding: 50px;
+  transition: transform 0.3s ease;
+}
+
+.member-card2:hover {
+  transform: scale(1);
+  box-shadow: 0 10px 20px rgba(0, 100, 0, 0.15);
+}
+
+.member-card2 img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 8px;
+  border: 2px solid #00640050;
+}
+
+.member-card2 .role2 {
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: #006400;
+  margin-bottom: 4px;
+}
+
+.member-card2 .name2 {
+  font-size: 0.85rem;
+  color: #FF69B4;
+}
+
+.team-slider2 .member-card2:last-child {
+  margin-right: 2px;
+}
+
+.team-slider2 .member-card2:first-child {
+  margin-left: 2px;
+}
+
+.controls2 {
+  margin-bottom: 1px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.controls2 button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  margin: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+  .active-body {
+    padding-top: 20px;
+    overflow-x: scroll;
+    max-width: 100vw;
+    display: flex ;
+    flex-direction: column;
+    
+  
+  }
+
+  .team-slider2 {
+    gap: 10px;
+        padding: 10px;
+  }
+
+  .member-card2 {
+    padding: 20px;
+    
+  }
+
+  .member-card2:hover {
+    transform: none;
+  }
+
+  .member-card2 img {
+    margin-bottom: 6px;
+  }
+}

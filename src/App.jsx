@@ -1,20 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './elements/Navbar'
-import Home from './Home'
-import About from './About'
-import GoverningBody from './GoverningBody'
-function App() {
-  const [count, setCount] = useState(0)
+import Home from './elements/Home'
+import About from './elements/About'
+import GoverningBody from './elements/GoverningBody'
+import ActiveBody from './elements/ActiveBody'
 
+function App() {
   return (
     <>
       <Navbar />
       <Home />
       <About />
-      <GoverningBody/>
+      <GoverningBody />
+      <ActiveBody />
     </>
   )
 }
