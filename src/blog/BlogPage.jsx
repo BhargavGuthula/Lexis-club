@@ -7,9 +7,10 @@ const BlogPage = () => {
   const [blogPosts, setBlogPosts] = useState(INITIAL_BLOG_POSTS);
   const [isWriting, setIsWriting] = useState(false);
   const [newPost, setNewPost] = useState({ title: '', content: '', image: '' });
+  const [isClosing , setIsClosing] = useState(false);
   
   // Mock authentication (replace with actual auth system)
-  const currentUser = APPROVED_AUTHORS[0]; // For testing purposes
+  const currentUser = APPROVED_AUTHORS[0]; 
   const isApprovedAuthor = currentUser && APPROVED_AUTHORS.some(author => author.id === currentUser.id);
 
   const handleSubmit = (e) => {
@@ -24,22 +25,30 @@ const BlogPage = () => {
     setNewPost({ title: '', content: '', image: '' });
     setIsWriting(false);
   };
-
+  const scrollToTop = () => {
+    console.log("Scrolling to top");
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className="blog-page">
-      <h1>Lexis Club Blog</h1>
+      <h1>Lexis Club Blogs</h1>
       
       {isApprovedAuthor && (
         <div className="blog-actions">
           {!isWriting ? (
             <button 
               className="write-button"
-              onClick={() => setIsWriting(true)}
+              onClick={() => {setIsWriting(true);
+                scrollToTop();
+              }}
             >
-              Write New Post
+              Write New Post +
             </button>
           ) : (
-            <form className="bl og-form" onSubmit={handleSubmit}>
+            <form className="blog-form" onSubmit={handleSubmit}>
               <input
                 type="text"
                 placeholder="Post Title"
@@ -68,6 +77,7 @@ const BlogPage = () => {
                   onClick={() => {
                     setIsWriting(false);
                     setNewPost({ title: '', content: '', image: '' });
+                    setIsClosing(true);
                   }}
                 >
                   Cancel

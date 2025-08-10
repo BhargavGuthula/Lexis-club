@@ -55,7 +55,7 @@ const GoverningBody = () => {
     <div className="governing-body-container">
       <h2>Governing Body</h2>
       <div className="controls">
-        <button onClick={scrollLeftHandler}>&larr; Left</button>
+        <button onClick={scrollLeftHandler}>&larr; </button>
         <div
           ref={swiperRef}
           className="governing-body"
@@ -79,7 +79,7 @@ const GoverningBody = () => {
 
         </div>
 
-        <button onClick={scrollRightHandler}>Right &rarr;</button>
+        <button onClick={scrollRightHandler}>&rarr;</button>
       </div>
     </div>
     </>

@@ -48,9 +48,9 @@ const BlogPostDetail = () => {
             ))}
           </div>
         )}
+        <Link to="/blog" className="back-link">← Back to Blog</Link>
         </div>
       </article>
-      <Link to="/blog" className="back-link">← Back to Blog</Link>
     </div>
     </>
   );

@@ -53,9 +53,9 @@ if (!swiperRef.current) return;
   return (
     <>
     <div className="active-body-container">
-      <h2>Active Members</h2>
+      <h2>Active Body</h2>
       <div className="controls2">
-        <button onClick={scrollLeftHandler}>&larr; Left</button>
+        <button onClick={scrollLeftHandler}>&larr;</button>
         
           <div
             ref={swiperRef}
@@ -79,7 +79,7 @@ if (!swiperRef.current) return;
             </div>
           </div>
       
-        <button onClick={scrollRightHandler}>Right &rarr;</button>
+        <button onClick={scrollRightHandler}>&rarr;</button>
       </div>
     </div>
     </>
